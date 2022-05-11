@@ -6,22 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/style.css" >
     <Title>Pomo</Title>
+
+    <script>
+        
+        var slideIndex = 0;
+        
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+        var i;
+        var y = document.getElementsByClassName("slide1");
+        var x = document.getElementsByClassName("slide");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+                y[i].style.display = "none";
+            }
+        x[slideIndex-1].style.display = "block";  
+        y[slideIndex-1].style.display = "block";
+        }
+
+        
+        
+        var botao = 0;
+        mudar(botao);
+        function plusBotao(m) {
+            mudar(botao += m)
+        }
+        function mudar(m) {
+            
+            if (m < 1) {document.getElementById(button_id).innerHTML = 'next';} 
+            if (m = 1) {document.getElementById(button_id).innerHTML = 'next';}
+            else{
+                document.getElementById(button_id).innerHTML = 'Get Started';
+            }
+        }
+
+        
+    </script>
+
 </head>
-<body>
+<body onload="plusDivs(1)">
     <header>
 
     </header>
     <main>
         <div class="container">
-
+            <div class="top">
+                <div class="image">
+                    <img class="slide" src="Styles/images/img_slide1.png" alt="">
+                    <img class="slide" src="Styles/images/slide2.png" alt="">
+                    <img class="slide" src="Styles/images/slide3.png" alt="">
+                </div>
+                
+            </div>
             <div class="middle">
-                <h1>
+                <h1 class="slide1" >
                     Easy task & work management with pomo   
+                </h1>
+                <h1 class="slide1">
+                    Track your productivity & gain insights
+                </h1>
+                <h1 class="slide1">
+                    Boost your productivity & be sucessfull
                 </h1>
             </div>
             <div class="bottom">
                 <h2></h2>
-                <button class="buttonP">login</button>
+                <button class="buttonP" id="button_id" onclick="plusDivs(1);plusBotao(1);">next</button>
                 <img src="Styles/loading.gif" alt="">
             </div>
         </div>  
