@@ -1,0 +1,25 @@
+.buttonP{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 16px;
+    gap: 10px;
+    
+    width: 380px;
+    height: 58px;
+    
+    /* Primary/500 */
+    
+    background: #FF575C;
+    /* Button/Shadow 1 */
+    
+    box-shadow: 4px 8px 24px rgba(255, 87, 92, 0.25);
+    border-radius: 100px;
+    
+    /* Inside auto layout */
+    
+    // flex: none;
+    order: 2;
+    flex-grow: 0;
+}

@@ -1,0 +1,97 @@
+@import './abstract/base';
+@import 'abstract/buttonPrimary';
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+@mixin imagem{
+    margin: 80px;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 24px 48px;
+    gap: 28px;
+
+    position: absolute;
+    height: auto;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    max-width: 100%;
+    
+    // .button{
+    //     @include botao-primario();
+        
+    // }
+    h2{
+        margin-left: 50%;
+    }
+   
+    // .top{
+    //     max-height:50% ;
+    //     height: 50%;
+    //     margin-top: 10%;
+    //     max-width: fit-content;
+    //     width: 100%;
+    // }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 24px 48px;
+        gap: 60px;
+
+        position: absolute;
+        width: 428px;
+        height: 398px;
+        left: 0px;
+        bottom: 0px;
+
+    }
+
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(115deg,#ff8286,#ff565b);
+    justify-content: center;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    max-width: 100%;
+
+    .load{
+        @include imagem();
+        
+        justify-content: space-between;
+        max-width: 100%;
+        margin-left:auto;
+        margin-right: auto;
+        transform: scaleX(-1);
+
+                    
+    }
+    .logo{
+        @include imagem();
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 50%;
+        margin-bottom: auto;
+        max-width: 100%;
+        
+    }
+}
