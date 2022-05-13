@@ -25,7 +25,7 @@ html, body {
   width: 380px;
   height: 58px;
   /* Primary/500 */
-  background: #FF575C;
+  background: #FFA451;
   /* Button/Shadow 1 */
   -webkit-box-shadow: 4px 8px 24px rgba(255, 87, 92, 0.25);
           box-shadow: 4px 8px 24px rgba(255, 87, 92, 0.25);
@@ -144,5 +144,95 @@ body {
   margin-top: 50%;
   margin-bottom: auto;
   max-width: 100%;
+}
+
+.container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 10%;
+  min-height: 10%;
+}
+
+.container2 .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  min-width: 100px;
+  min-height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 24px 48px;
+}
+
+.container2 .top .image {
+  margin: 80px;
+  max-width: 100%;
+}
+
+.container2 .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  text-align: center;
+  min-width: 100px;
+  min-height: 100px;
+  font-weight: 500;
+  font-size: 140%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 24px 48px;
+}
+
+.container2 .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 24px 48px;
+  min-width: 100px;
+  min-height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 /*# sourceMappingURL=style.css.map */

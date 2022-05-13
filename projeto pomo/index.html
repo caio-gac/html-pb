@@ -10,7 +10,7 @@
     <script>
         
         var slideIndex = 0;
-        
+       
         showDivs(slideIndex);
 
         function plusDivs(n) {
@@ -29,25 +29,10 @@
             }
         x[slideIndex-1].style.display = "block";  
         y[slideIndex-1].style.display = "block";
-        }
 
-        
-        
-        var botao = 0;
-        mudar(botao);
-        function plusBotao(m) {
-            mudar(botao += m)
         }
-        function mudar(m) {
-            
-            if (m < 1) {document.getElementById(button_id).innerHTML = 'next';} 
-            if (m = 1) {document.getElementById(button_id).innerHTML = 'next';}
-            else{
-                document.getElementById(button_id).innerHTML = 'Get Started';
-            }
-        }
+      
 
-        
     </script>
 
 </head>
@@ -78,10 +63,28 @@
             </div>
             <div class="bottom">
                 <h2></h2>
-                <button class="buttonP" id="button_id" onclick="plusDivs(1);plusBotao(1);">next</button>
-                <img src="Styles/loading.gif" alt="">
+                <button class="buttonP" id="button_id" onclick="plusDivs(1)">next</button>
+                
             </div>
-        </div>  
+        </div>
+        <script>
+            var listaBotao = ['next','next','Get started'] ;
+            var index = 0;
+            var botao = document.querySelector(".buttonP");
+            botao.addEventListener("click",function(){
+                if(index +1 ==listaBotao.length){
+                    index =0;
+                }else{
+                    index = index + 1
+                }
+                botao.textContent = listaBotao[index];
+
+                // if(index>2){
+                //     window.location.replace("");
+                // }
+            })
+
+        </script>   
 
     </main>
     <footer>
