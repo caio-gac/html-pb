@@ -1,0 +1,25 @@
+.iconesTopo{
+       
+    .abaLateral{
+        display:flex ;
+        float: left;
+        position:relative;
+        width: 22px;
+        height: 11px;
+        left: 24px;
+        top: 88px;
+    }
+    .abaBasket{
+        
+        float: right;
+        position: relative;
+        width: 41px;
+        height:42px;
+        left: 310px;
+        top: 10px;
+        .img{
+            object-fit: cover;
+            object-position: bottom;
+        }
+    }
+}

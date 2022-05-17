@@ -2,8 +2,6 @@ html, body {
   font-family: 'Roboto', sans-serif;
   width: 100%;
   height: 100%;
-  max-height: 100%;
-  max-width: 100%;
 }
 
 body {
@@ -236,6 +234,7 @@ body {
 }
 
 .homeBody {
+  border: dashed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,7 +244,100 @@ body {
   top: 0px;
 }
 
-.homeBody .iconesTopo .abaLateral {
+.carrossel {
+  width: 100%;
+  height: 150px;
+  bottom: 016px;
+}
+
+.carrossel .carrosselTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 34px;
+  left: 24px;
+  top: 588px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.carrossel .carrosselImg {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  bottom: 0;
+  height: 150px;
+}
+
+.carrossel .carrosselImg .imgCarrossel {
+  width: 100%;
+}
+
+.carrossel .carrosselImg .imgCarrossel img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  width: 80px;
+  height: 150px;
+}
+
+.combo1 {
+  position: absolute;
+  width: 100%;
+  height: 183px;
+  left: 0;
+  top: 357px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.combo1 .imgCombo1 {
+  padding-right: 23px;
+  margin-right: 23px;
+  width: 40%;
+  height: 183px;
+}
+
+.combo1 .imgCombo2 {
+  width: 40%;
+  height: 183px;
+}
+
+.combo1 .img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.comboText {
+  position: absolute;
+  width: 100%;
+  height: 32px;
+  left: 25px;
+  top: 301px;
+}
+
+.iconesTopo .abaLateral {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,7 +349,7 @@ body {
   top: 88px;
 }
 
-.homeBody .iconesTopo .abaBasket {
+.iconesTopo .abaBasket {
   float: right;
   position: relative;
   width: 41px;
@@ -266,36 +358,14 @@ body {
   top: 10px;
 }
 
-.homeBody .iconesTopo .abaBasket .img {
+.iconesTopo .abaBasket .img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
 }
 
-.homeBody .homeText {
-  position: absolute;
-  width: 100%;
-  height: 58px;
-  left: 24px;
-  top: 140px;
-  margin-bottom: 20%;
-}
-
-.homeBody .homeText h1 {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 29px;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  letter-spacing: -0.01em;
-  color: #27214D;
-}
-
-.homeBody .search {
+.search {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,97 +384,26 @@ body {
   top: 205px;
 }
 
-.homeBody .comboText {
+.homeText {
   position: absolute;
   width: 100%;
-  height: 32px;
-  left: 25px;
-  top: 301px;
-}
-
-.homeBody .combo1 {
-  position: absolute;
-  width: 100%;
-  height: 183px;
-  left: 0;
-  top: 357px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.homeBody .combo1 .imgCombo1 {
-  padding-right: 23px;
-  margin-right: 23px;
-  width: 40%;
-  height: 183px;
-}
-
-.homeBody .combo1 .imgCombo2 {
-  width: 40%;
-  height: 183px;
-}
-
-.homeBody .combo1 .img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
-}
-
-.homeBody .carrossel {
-  width: 100%;
-  height: 150px;
-  bottom: 016px;
-}
-
-.homeBody .carrossel .carrosselTop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  height: 34px;
+  height: 58px;
   left: 24px;
-  top: 588px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
+  top: 140px;
+  margin-bottom: 20%;
 }
 
-.homeBody .carrossel .carrosselImg {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  right: 0;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  bottom: 0;
-  height: 150px;
-}
-
-.homeBody .carrossel .carrosselImg .imgCarrossel {
-  width: 100%;
-}
-
-.homeBody .carrossel .carrosselImg .imgCarrossel img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
-  width: 80px;
-  height: 150px;
+.homeText h1 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  letter-spacing: -0.01em;
+  color: #27214D;
 }
 
 .orderComplete .divImage img {

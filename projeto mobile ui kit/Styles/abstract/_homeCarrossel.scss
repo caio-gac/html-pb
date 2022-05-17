@@ -1,0 +1,44 @@
+.carrossel{
+        
+    width: 100%;
+    height:150px;
+    
+    bottom: 016px;
+    
+
+    .carrosselTop{
+        
+        display: flex;
+        flex-direction: row;
+        
+        width: 100%;
+        height: 34px;
+        left: 24px;
+        top: 588px;
+        object-fit: cover;
+        object-position: bottom;
+        
+    }
+    .carrosselImg{
+        position: absolute;
+        display: flex;
+        right: 0;
+        flex-direction: row;
+        
+        bottom: 0;
+        height: 150px;
+        
+        .imgCarrossel{
+           
+            
+            width: 100%;
+            
+            img{
+                object-fit: cover;
+                object-position: bottom;
+                width: 80px;
+                height: 150px;
+            }
+        }
+    }
+}
