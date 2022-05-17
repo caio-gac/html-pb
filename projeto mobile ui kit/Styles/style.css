@@ -16,28 +16,223 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 812px;
-  width: 375px;
+  height: 100%;
+  width: 100%;
 }
 
-.top {
+.bottom {
   position: absolute;
-  width: 375px;
-  height: 469px;
-  max-width: 10px;
-  left: 0px;
-  top: 0px;
+  width: 327px;
+  height: 199px;
+  left: 24px;
+  top: 525px;
+}
+
+.bottom .textIndex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 282px;
+  max-height: 85px;
+  width: 100%;
+  height: 100%;
+  top: 525px;
+  padding-bottom: 36px;
+}
+
+.bottom .textIndex h2 {
+  font-size: 20px;
+}
+
+.bottom .buttonDiv {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 327px;
+  max-height: 56px;
+  width: 100%;
+  height: 100%;
+  margin-top: 58px;
+  border-radius: 10px;
+}
+
+.bottom .buttonDiv .buttonPrimary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 327px;
+  max-height: 56px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  font-family: 'Brandon Grotesque';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
   background: #FFA451;
 }
 
-.top .logo1 {
+.bottomAuth {
   position: absolute;
-  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 327px;
+  max-height: 199px;
+  width: 100%;
+  height: 100%;
+  left: 24px;
+  right: auto;
+  top: 525px;
+}
+
+.bottomAuth .inputAuth {
+  font-family: 'Lato';
+  max-width: 183px;
+  max-height: 29px;
+  width: 100%;
+  height: 100%;
+  left: 24px;
+  top: 570px;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: -0.01em;
+}
+
+.bottomAuth .inputAuth .inputAuth1 {
+  background: #F3F1F1;
+  border-radius: 10px;
+  width: 327px;
+  height: 56px;
+  left: 24px;
+  top: 570px;
+  color: #C2BDBD;
+}
+
+.bottomAuth .buttonAuthDiv {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 327px;
+  max-height: 56px;
+  width: 100%;
+  height: 100%;
+  top: 214px;
+}
+
+.bottomAuth .buttonAuthDiv .buttonAuth {
+  max-width: 327px;
+  max-height: 56px;
+  width: 100%;
+  height: 100%;
+  background: #FFA451;
+  border-radius: 10px;
+}
+
+.bottomBasket {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  max-width: 375px;
+  max-height: 677px;
+  left: 0px;
+  top: 144px;
+  background: #FFFFFF;
+}
+
+.bottomBasket .imageBasket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  max-height: 80px;
+  max-width: 375px;
+  padding-top: 32px;
+  margin-top: 32px;
+}
+
+.bottomBasket .basketTotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  float: left;
+  max-width: 103px;
+  max-height: 56px;
+  width: 100%;
+  height: 100%;
+  left: 25px;
+}
+
+.bottomBasket .buttonBasketDiv {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  max-width: 199px;
+  max-height: 56px;
+  width: 100%;
+  height: 100%;
+}
+
+.bottomBasket .buttonBasketDiv .buttonBasket {
+  max-width: 199px;
+  max-height: 56px;
+  width: 100%;
+  height: 100%;
+  right: 10;
+  background: #FFA451;
+  border-radius: 10px;
+}
+
+.bottomTrack {
+  position: absolute;
+  max-width: 375px;
+  max-height: 498px;
+  width: 375px;
   height: auto;
-  max-width: 100px;
-  max-height: 281.21px;
-  left: 31px;
-  top: 134px;
+  left: 0px;
+  top: 314px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FFFFFF;
+  border-radius: 16px 16px 0px 0px;
 }
 
 .homeBody {
@@ -269,7 +464,44 @@ body {
   border-radius: 10px;
 }
 
-.topIndex {
+.splash .splashDiv {
+  width: 100%;
+  height: 100%;
+}
+
+.splash .splashDiv .splashImage {
+  position: absolute;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.top {
+  position: absolute;
+  width: 375px;
+  height: 469px;
+  max-width: 10px;
+  left: 0px;
+  top: 0px;
+  background: #FFA451;
+}
+
+.top .logo1 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 100px;
+  max-height: 281.21px;
+  left: 31px;
+  top: 134px;
+}
+
+.topAuth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -277,25 +509,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  width: 100%;
   max-width: 375px;
-  height: 100%;
   max-height: 469px;
-  left: 0px;
+  width: 100%;
+  height: 100%;
+  left: auto;
+  right: auto;
   top: 0px;
   background: #FFA451;
 }
 
-.topIndex .logo1 {
+.topAuth .logoAuth {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 301px;
   height: 100%;
+  max-width: 301px;
   max-height: 260px;
   left: 35px;
   top: 155px;
@@ -342,10 +573,7 @@ body {
   margin-top: 28px;
 }
 
-.topAuth {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.topIndex {
   position: absolute;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -353,24 +581,25 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: flex;
-  max-width: 375px;
-  max-height: 469px;
-  width: 100%;
-  height: 100%;
-  left: auto;
-  right: auto;
-  top: 0px;
-  background: #FFA451;
-}
-
-.topAuth .logoAuth {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  max-width: 375px;
   height: 100%;
+  max-height: 469px;
+  left: 0px;
+  top: 0px;
+  background: #FFA451;
+}
+
+.topIndex .logo1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   max-width: 301px;
+  height: 100%;
   max-height: 260px;
   left: 35px;
   top: 155px;
@@ -390,232 +619,9 @@ body {
   background: #FFA451;
 }
 
-.bottom {
-  position: absolute;
-  width: 327px;
-  height: 199px;
-  left: 24px;
-  top: 525px;
-}
-
-.bottom .textIndex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 282px;
-  max-height: 85px;
-  width: 100%;
-  height: 100%;
-  top: 525px;
-  padding-bottom: 36px;
-}
-
-.bottom .textIndex h2 {
-  font-size: 20px;
-}
-
-.bottom .buttonDiv {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 327px;
-  max-height: 56px;
-  width: 100%;
-  height: 100%;
-  margin-top: 58px;
-  border-radius: 10px;
-}
-
-.bottom .buttonDiv .buttonPrimary {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 327px;
-  max-height: 56px;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  font-family: 'Brandon Grotesque';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  /* or 150% */
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  letter-spacing: -0.01em;
-  color: #FFFFFF;
-  background: #FFA451;
-}
-
-.bottomBasket {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  max-width: 375px;
-  max-height: 677px;
-  left: 0px;
-  top: 144px;
-  background: #FFFFFF;
-}
-
-.bottomBasket .imageBasket {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  max-height: 80px;
-  max-width: 375px;
-  padding-top: 32px;
-  margin-top: 32px;
-}
-
-.bottomBasket .basketTotal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  float: left;
-  max-width: 103px;
-  max-height: 56px;
-  width: 100%;
-  height: 100%;
-  left: 25px;
-}
-
-.bottomBasket .buttonBasketDiv {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  float: right;
-  max-width: 199px;
-  max-height: 56px;
-  width: 100%;
-  height: 100%;
-}
-
-.bottomBasket .buttonBasketDiv .buttonBasket {
-  max-width: 199px;
-  max-height: 56px;
-  width: 100%;
-  height: 100%;
-  right: 10;
-  background: #FFA451;
-  border-radius: 10px;
-}
-
-.bottomAuth {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 327px;
-  max-height: 199px;
-  width: 100%;
-  height: 100%;
-  left: 24px;
-  right: auto;
-  top: 525px;
-}
-
-.bottomAuth .inputAuth {
-  font-family: 'Lato';
-  max-width: 183px;
-  max-height: 29px;
-  width: 100%;
-  height: 100%;
-  left: 24px;
-  top: 570px;
-  margin-bottom: 16px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
-  letter-spacing: -0.01em;
-}
-
-.bottomAuth .inputAuth .inputAuth1 {
-  background: #F3F1F1;
-  border-radius: 10px;
-  width: 327px;
-  height: 56px;
-  left: 24px;
-  top: 570px;
-  color: #C2BDBD;
-}
-
-.bottomAuth .buttonAuthDiv {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 327px;
-  max-height: 56px;
-  width: 100%;
-  height: 100%;
-  top: 214px;
-}
-
-.bottomAuth .buttonAuthDiv .buttonAuth {
-  max-width: 327px;
-  max-height: 56px;
-  width: 100%;
-  height: 100%;
-  background: #FFA451;
-  border-radius: 10px;
-}
-
-.bottomTrack {
-  position: absolute;
-  max-width: 375px;
-  max-height: 498px;
-  width: 375px;
-  height: auto;
-  left: 0px;
-  top: 314px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: #FFFFFF;
-  border-radius: 16px 16px 0px 0px;
-}
-
-.splash .splashDiv {
-  width: 100%;
-  height: 100%;
-}
-
-.splash .splashDiv .splashImage {
-  position: absolute;
-  width: 85%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+@media only screen and (max-width: 480px) {
+  img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

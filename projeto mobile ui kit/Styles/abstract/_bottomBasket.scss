@@ -1,0 +1,55 @@
+.bottomBasket{
+        
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    max-width: 375px;
+    max-height: 677px;
+    left: 0px;
+    top: 144px;
+
+background: #FFFFFF;
+    .imageBasket{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        max-height: 80px;
+        max-width: 375px;
+        padding-top: 32px;
+        margin-top: 32px;
+        
+        
+    }
+
+        .basketTotal{
+            display: flex;
+            position: relative;
+            float: left;
+            max-width: 103px;
+            max-height: 56px;
+            width: 100%;
+            height: 100%;
+            left: 25px;
+            
+        }
+        .buttonBasketDiv{
+            position: relative;
+            display: flex;
+            float: right;
+            max-width: 199px;
+            max-height: 56px;
+            width: 100%;
+            height:100%;
+            .buttonBasket{
+                max-width: 199px;
+                max-height: 56px;
+                width: 100%;
+                height:100%;
+                right: 10;
+                background:#FFA451;
+                border-radius: 10px;
+            }
+        }
+}

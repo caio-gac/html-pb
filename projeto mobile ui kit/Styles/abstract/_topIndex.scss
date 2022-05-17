@@ -1,0 +1,25 @@
+.topIndex{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    height:100%;
+    max-height: 469px;
+    left: 0px;
+    top:0px;
+    
+    
+
+    background: #FFA451;
+    .logo1{
+        display: flex;
+        width: 100%;
+        max-width: 301px;
+        height: 100%;
+        max-height: 260px;
+        left: 35px;
+        top: 155px;    
+    }
+}
